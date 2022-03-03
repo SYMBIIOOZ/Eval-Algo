@@ -12,15 +12,22 @@ const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 
 function decrypte(code) {
     
+    for(code<code.length; code++;) {
+
+        let code = code[index];
+    }
     
-    
-    for (let index = 0; index < alphabet.length; index++) {
-        console.log(code)
-        const element = alphabet[index];
-        const result = console.log(parseInt(index,code))
+    // for (let index = 0; index < alphabet.length; index++) {
+        // console.log(code)
+        for (const element of alphabet) {
+        // const element = alphabet[index];
+        // const result = console.log(parseInt(index,code))
+        if (code === element) {
+            console.log("ok")
+            console.log(element)
+        }
     }
         
-    return result
        
         
         
