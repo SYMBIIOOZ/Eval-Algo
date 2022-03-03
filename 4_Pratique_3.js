@@ -15,7 +15,23 @@
 // Object : [corps]
 
 function afficheMessage(estUrgent, titre, corps) {
-
+    
+    let Titre = titre;
+    let Object = corps;
+    let defaultTitle= "Message sans titre"
+    
+    
+    if (estUrgent === false && titre === undefined) {
+        titre = defaultTitle
+        console.log('titre : ' + titre + "\n" + Object);
+        
+    }else if (estUrgent === true && titre != undefined) {
+        console.log("!!! URGENT !!!")
+        console.log('titre : ' +" " + defaultTitle + "\n" + Object)
+    }
+    else if(estUrgent === false && titre != undefined){
+        console.log('titre : ' + titre + "\n" + Object);
+    }
 }
 
 // NE PAS MODIFIER APRES CETTE LIGNE

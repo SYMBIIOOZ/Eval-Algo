@@ -8,14 +8,25 @@
 // Le but est que la fonction RETOURNE le mot décrypté sous la forme d'une chaîne de charactère
 // Exemple decrypte([7, 4, 11, 11, 4]) retourne "hello"
 
-let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 function decrypte(code) {
-
-    return "";
-}
-
-// NE PAS MODIFIER APRES CETTE LIGNE
-
-console.log(decrypte([1, 14, 13, 9, 14, 20, 17]));
-console.log(decrypte([9, 0, 21, 0, 18, 2, 17, 8, 15, 19]));
+    
+    
+    
+    for (let index = 0; index < alphabet.length; index++) {
+        console.log(code)
+        const element = alphabet[index];
+        const result = console.log(parseInt(index,code))
+    }
+        
+    return result
+       
+        
+        
+    
+    
+}   // NE PAS MODIFIER APRES CETTE LIGNE
+    
+    console.log(decrypte([1, 14, 13, 9, 14, 20, 17]));
+    console.log(decrypte([9, 0, 21, 0, 18, 2, 17, 8, 15, 19]));
